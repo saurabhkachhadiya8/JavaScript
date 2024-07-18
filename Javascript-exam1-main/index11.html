@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>program11</title>
+</head>
+
+<body>
+
+    <script>
+        var a = parseInt(prompt("Enter first number :"));
+        var b = parseInt(prompt("Enter second number :"));
+        var c = parseInt(prompt("Enter third number :"));
+        var d = parseInt(prompt("Enter fourth number :"));
+
+        console.log("first number = " + a);
+        console.log("second number = " + b);
+        console.log("third number = " + c);
+        console.log("fourth number = " + d);
+
+        if (a > b) {
+            if (a > c) {
+                if (a > d) {
+                    console.log("a is greter.");
+                }
+                else if (a == d) {
+                    console.log("a & d is same.");
+                }
+                else {
+                    console.log("d is greter.");
+                }
+            }
+            else if (a == c) {
+                console.log("a & c is same.");
+            }
+            else {
+                if (c > d) {
+                    console.log("c is greter.");
+                }
+                else if (c == d) {
+                    console.log("c & d is same.");
+                }
+                else {
+                    console.log("d is greter.");
+                }
+            }
+        }
+        else if (a == b) {
+            console.log("a and b is same.");
+        }
+        else {
+            if (b > c) {
+                if (b > d) {
+                    console.log("b is greter.");
+                }
+                else if (b == d) {
+                    console.log("b & d is same.");
+                }
+                else {
+                    console.log("d is greter.");
+                }
+            }
+            else if (b == c) {
+                console.log("b & c is same.");
+            }
+            else {
+                if (c > d) {
+                    console.log("c is greter.");
+                }
+                else if (c == d) {
+                    console.log("c & d is same.");
+                }
+                else {
+                    console.log("d is greter.");
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oops 1</title>
+</head>
+
+<body>
+    <script>
+
+        let physics = parseFloat(prompt("Enter Physics Marks:"));
+        let chemistry = parseFloat(prompt("Enter Chemistry Marks:"));
+        let biology = parseFloat(prompt("Enter Biology Marks:"));
+        let mathematics = parseFloat(prompt("Enter Mathematics Marks:"));
+        let computer = parseFloat(prompt("Enter Computer Marks:"));
+
+        console.log("Physics Marks = " + physics);
+        console.log("Chemistry Marks = " + chemistry);
+        console.log("Biology Marks = " + biology);
+        console.log("Mathematics Marks = " + mathematics);
+        console.log("Computer Marks = " + computer);
+
+        class Student {
+            constructor(physics, chemistry, biology, mathematics, computer) {
+                this.physics = physics;
+                this.chemistry = chemistry;
+                this.biology = biology;
+                this.mathematics = mathematics;
+                this.computer = computer;
+            }
+
+            Percentage() {
+                let totalMarks = this.physics + this.chemistry + this.biology + this.mathematics + this.computer;
+                let percentage = (totalMarks / 500) * 100;
+                return percentage;
+            }
+
+            Grade() {
+                let percentage = this.Percentage();
+                if (percentage >= 90) {
+                    return 'A';
+                } else if (percentage >= 80) {
+                    return 'B';
+                } else if (percentage >= 70) {
+                    return 'C';
+                } else if (percentage >= 60) {
+                    return 'D';
+                } else if (percentage >= 50) {
+                    return 'E';
+                } else if (percentage >= 40) {
+                    return 'F';
+                } else if (percentage < 40) {
+                    return 'You are failed.';
+                }
+            }
+        }
+
+        let student = new Student(physics, chemistry, biology, mathematics, computer);
+
+        let percentage = student.Percentage();
+        let grade = student.Grade();
+
+        console.log("\nPercentage: " + percentage + " %");
+        console.log("Grade: " + grade);
+
+    </script>
+</body>
+
+</html>

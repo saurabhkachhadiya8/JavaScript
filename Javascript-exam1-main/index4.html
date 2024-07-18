@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>program4</title>
+</head>
+
+<body>
+
+    <script>
+        var sal = parseInt(prompt("Enter Base Salary : "));
+        var hra = parseInt(prompt("HRA in percentage : "));
+        var da = parseInt(prompt("DA in percentage : "));
+        var ta = parseInt(prompt("TA in percentage : "));
+
+        console.log("Salary = " + sal);
+        console.log("HRA = " + hra + "%");
+        console.log("DA = " + da + "%");
+        console.log("TA = " + ta + "%");
+
+        console.log("Total salary = Rs. " + (sal + (hra / 100 * sal) + (da / 100 * sal) + (ta / 100 * sal)));
+    </script>
+
+</body>
+
+</html>

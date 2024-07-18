@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pro_6</title>
+</head>
+
+<body>
+
+    <script>
+        var first = parseInt(prompt("Enter your first number :"))
+        var second = parseInt(prompt("Enter your second number :"))
+        var third;
+
+        console.log("first number = " + first)
+        console.log("second number = " + second)
+
+        third = second; second = first; first = third;
+        console.log("\n\n After swapping :")
+
+        console.log("\n\n by TNRN :")
+        function tnrn() {
+            console.log("first number = " + first)
+            console.log("second number = " + second)
+        }
+        console.log(tnrn())
+
+        console.log("\n by TSRN :")
+        function tsrn(a, b) {
+            console.log("first number = " + a);
+            console.log("second number = " + b);
+        }
+        console.log(tsrn(first, second))
+
+        console.log("\n by TNRS :")
+        function tnrs() {
+            return "first number = " + first
+            return "second number = " + second
+        }
+        console.log(tnrs())
+
+        console.log("\n by TSRS :")
+        function tsrn(a, b) {
+            return "first number = " + a
+            return "second number = " + b
+        }
+        console.log(tsrn(first, second))
+    </script>
+
+</body>
+
+</html>

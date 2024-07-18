@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pro_3</title>
+</head>
+
+<body>
+
+    <script>
+        let num_1 = (parseInt(prompt("Enter your first number :")));
+        let num_2 = (parseInt(prompt("Enter your second number :")));
+        let num_3 = (parseInt(prompt("Enter your third number :")));
+        let num_4 = (parseInt(prompt("Enter your fourth number :")));
+
+        console.log("first number = " + num_1);
+        console.log("second number = " + num_2);
+        console.log("third number = " + num_3);
+        console.log("fourth number = " + num_4);
+
+        function greater() {
+            if (num_1 > num_2) {
+                if (num_1 > num_3) {
+                    if (num_1 > num_4) {
+                        console.log("first number is greater.")
+                    }
+                    else {
+                        console.log("fourth number is greater.")
+                    }
+                }
+                else {
+                    if (num_3 > num_4) {
+                        console.log("third number is greater.")
+                    }
+                    else {
+                        console.log("fourth number is greater.")
+                    }
+                }
+            }
+            else {
+                if (num_2 > num_3) {
+                    if (num_2 > num_4) {
+                        console.log("second number is greater.")
+                    }
+                    else {
+                        console.log("fourth number is greater.")
+                    }
+                }
+                else {
+                    if (num_3 > num_4) {
+                        console.log("third number is greater.")
+                    }
+                    else {
+                        console.log("fourth number is greater.")
+                    }
+                }
+
+            }
+        }
+
+        console.log(greater())
+    </script>
+
+</body>
+
+</html>

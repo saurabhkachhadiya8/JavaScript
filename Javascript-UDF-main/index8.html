@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pro_8</title>
+</head>
+
+<body>
+
+    <script>
+        var a = parseInt(prompt("Enter your first number :"))
+        var b = parseInt(prompt("Enter your second number :"))
+
+        console.log("first number = " + a)
+        console.log("second number = " + b)
+
+        function choice(choice) {
+            switch (choice) {
+
+                case 1:
+                    console.log("sum = " + (a + b));
+                    break;
+
+                case 2:
+                    console.log("sub = " + (a - b));
+                    break;
+
+                case 3:
+                    console.log("multiplication = " + (a * b));
+                    break;
+
+                case 4:
+                    console.log("division = " + (a / b));
+                    break;
+
+                default:
+                    console.log("please enter valid choice");
+                    break;
+            }
+        }
+        var Choice = parseInt(prompt("press 1 for addition.\n press 2 for subtration.\n press 3 for multiplication.\n press 4 for division.\n\n enter your choice :"));
+        console.log(choice(Choice))
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>program13</title>
+</head>
+
+<body>
+
+    <script>
+        var ch = 65, num = 1;
+        for (var i = 1; i <= 5; i++) {
+            for (var j = 1; j <= 5; j++) {
+                if (i % 2 == 1) {
+                    if (j % 2 == 1) {
+                        document.write(num++);
+                    } else {
+                        document.write(String.fromCharCode(ch++));
+                    }
+                } else {
+                    if (j % 2 == 0) {
+                        document.write(String.fromCharCode(ch++));
+                    } else {
+                        document.write(num++);
+                    }
+                }
+                document.write("&nbsp; ");
+            }
+            document.write("<br>");
+        }
+    </script>
+
+</body>
+
+</html>

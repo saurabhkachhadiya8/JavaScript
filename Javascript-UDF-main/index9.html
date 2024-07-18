@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pro_9</title>
+</head>
+
+<body>
+
+    <script>
+        var a = parseInt(prompt("Enter the triangle's first angle :"))
+        var b = parseInt(prompt("Enter the triangle's second angle :"))
+        var c = parseInt(prompt("Enter the triangle's third angle :"))
+
+        console.log("first angle = " + a)
+        console.log("second angle = " + b)
+        console.log("third angle = " + c)
+
+        function triangle() {
+            if (a + b + c == 180) {
+                return "this triangle is valid."
+            }else{
+                return "this triangle is not valid."
+            }
+        }
+        console.log(triangle())
+
+    </script>
+
+</body>
+
+</html>

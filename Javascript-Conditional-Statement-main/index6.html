@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>program11.5</title>
+</head>
+
+<body>
+
+    <script>
+        var a = parseInt(prompt("Enter Physics marks :"));
+        var b = parseInt(prompt("Enter Chemistry marks :"));
+        var c = parseInt(prompt("Enter Biology marks :"));
+        var d = parseInt(prompt("Enter Mathematics marks :"));
+        var e = parseInt(prompt("Enter Computer marks :"));
+
+        document.write("Physics marks = " + a + "<br>");
+        document.write("Chemistry marks = " + b + "<br>");
+        document.write("Biology marks = " + c + "<br>");
+        document.write("Mathematics marks = " + d + "<br>");
+        document.write("Computer marks = " + e + "<br><br>");
+
+        var per = (a+b+c+d+e)/5;
+        document.write("Percentage = " + per + "%" + "<br><br>");
+
+        if (per >= 90) {
+            document.write("your grade is A.");
+        }
+        else if (per >= 80) {
+            document.write("your grade is B.");
+        }
+        else if (per >= 70) {
+            document.write("your grade is C.");
+        }
+        else if (per >= 60) {
+            document.write("your grade is D.");
+        }
+        else if (per >= 50) {
+            document.write("your grade is E.");
+        }
+        else if (per >= 40) {
+            document.write("your grade is F.");
+        }
+        else {
+            document.write("your are fail.");
+        }
+    </script>
+
+</body>
+
+</html>

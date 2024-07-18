@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>program4</title>
+</head>
+
+<body>
+
+    <script>
+        selary = 100, hra = 10, da = 5, ta = 8, total = selary + hra + da + ta;
+
+        document.write("Selary : " + selary);
+        document.write("<br> HRA : " + hra);
+        document.write("<br> DA : " + da);
+        document.write("<br> TA : " + ta);
+
+        document.write("<br> <br> total selary = Rs. ", total);
+    </script>
+
+    <script>
+
+        let Principal = 1000, Rate = 0.05, Tenure = 2, interest = Principal * Rate * Tenure;
+
+        document.write("<br><br><br>Principal is " + Principal);
+        document.write("<br> Rate is " + Rate);
+        document.write("<br> Tenure is " + Tenure);
+
+        document.write("<br> <br> Interest is " + interest);
+    </script>
+
+    <script>
+
+        var unit = 435, total, sum, ans;
+
+        if (unit <= 50) {
+            total = unit * 0.50;
+        }
+        else if (unit <= 150) {
+            total = 25 + ((unit - 50) * 0.75);
+        }
+        else if (unit <= 250) {
+            total = 100 + ((unit - 150) * 1.20);
+        }
+        else {
+            total = 220 + ((unit - 250) * 1.50);
+        }
+        sum = total * 0.20;
+        ans = total + sum;
+
+        document.write("<br> <br><br> Electricity units : " + unit);
+
+        document.write("<br> Electicity Bill : Rs. " + ans);
+    </script>
+
+    <script>
+
+        let a = 90;
+
+        document.write("<br><br><br> Percentage = " + a);
+        document.write("%");
+
+        if (a > 90) {
+            document.write("<br> Your Grade is A+");
+        }
+        else if (a > 80) {
+            document.write("<br> Your Grade is A");
+        }
+        else if (a > 70) {
+            document.write("<br> Your Grade is B+");
+        }
+        else if (a > 60) {
+            document.write("<br> Your Grade is B");
+        }
+        else if (a > 50) {
+            document.write("<br> Your Grade is C");
+        }
+        else if (a > 40) {
+            document.write("<br> Your Grade is D");
+        }
+        else if (a > 33) {
+            document.write("<br> Your Grade is F");
+        }
+        else {
+            document.write("<br> You're Fail ");
+        }
+    </script>
+
+</body>
+
+</html>

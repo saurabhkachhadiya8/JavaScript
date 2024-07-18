@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>program2</title>
+</head>
+
+<body>
+
+    <script>
+        var num1 = parseInt(prompt("Enter first number :"));
+        var num2 = parseInt(prompt("Enter second number :"));
+
+        console.log("first number = " + num1);
+        console.log("second number = " + num2);
+
+        var num3 = num2;
+        num2 = num1;
+        num1 = num3;
+
+        console.log("After swapping");
+        console.log("first number = " + num1);
+        console.log("second number = " + num2);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>program5</title>
+</head>
+
+<body>
+
+    <script>
+        var a = (parseInt(prompt("Enter the value of a : ")));
+        var b = (parseInt(prompt("Enter the value of b : ")));
+        console.log("a = " + a);
+        console.log("b = " + b);
+
+        console.log("calculation of a & b : ");
+
+        console.log("" + a + " + " + b + " = " + (a + b));
+        console.log("" + a + " - " + b + " = " + (a - b));
+        console.log("" + a + " * " + b + " = " + (a * b));
+        console.log("" + a + " / " + b + " = " + (a / b));
+        console.log("" + a + " % " + b + " = " + (a % b));
+
+        var c = a; a = b; b = c;
+
+        console.log("The value of a & b after swapping");
+        console.log("a = " + a);
+        console.log("b = " + b);
+    </script>
+
+    <script>
+        var tem = (parseInt(prompt("Enter Celsius : ")));
+        console.log("Celsius = " + tem);
+        console.log("Celsius to Fahrenheit = " + ((tem * (9 / 5)) + 35));
+    </script>
+
+    <script>
+        var sal = (parseInt(prompt("Enter Base Salary : ")));
+        var hra = (parseInt(prompt("HRA in percentage : ")));
+        var da = (parseInt(prompt("DA in percentage : ")));
+        var ta = (parseInt(prompt("TA in percentage : ")));
+        console.log("Salary = " + sal);
+        console.log("HRA = " + hra + "%");
+        console.log("DA = " + da + "%");
+        console.log("TA = " + ta + "%");
+
+        console.log("Total salary = Rs. " + (sal + (hra / 100 * sal) + (da / 100 * sal) + (ta / 100 * sal)));
+    </script>
+
+    <script>
+        const pi = 3.14;
+        var r = (parseInt(prompt("Enter the value of (r) : ")));
+        console.log("Radius = " + r);
+
+        console.log("Area of circle : " + (pi * r * r));
+    </script>
+
+    <script>
+        var b = (parseInt(prompt("Enter the value of (b) : ")));
+        var h = (parseInt(prompt("Enter the value of (h) : ")));
+        console.log("Width = " + b);
+        console.log("Height = " + h);
+
+        console.log("Area of triangle : " + (0.5 * b * h));
+    </script>
+
+    <script>
+        var pri = (parseInt(prompt("Enter principle : ")));
+        var rate = (parseInt(prompt("Enter rate : ")));
+        var time = (parseInt(prompt("Enter time period : ")));
+        console.log("Principle = " + pri);
+        console.log("Rate = " + rate);
+        console.log("Time = " + time);
+
+        console.log("Rate of interest : " + ((pri * rate * time) / 100));
+    </script>
+
+</body>
+
+</html>

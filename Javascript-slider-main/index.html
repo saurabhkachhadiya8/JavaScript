@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider-Js</title>
+    <style>
+        .slider {
+            max-width: 1130px;
+            margin: 0 auto;
+        }
+
+        .slide {
+            display: none;
+        }
+
+        .slide img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="slider">
+        <div class="slide fade">
+            <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="">
+        </div>
+        <div class="slide fade">
+            <img src="https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="">
+        </div>
+        <div class="slide fade">
+            <img src="https://images.pexels.com/photos/8294625/pexels-photo-8294625.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="">
+        </div>
+    </div>
+
+    <script>
+        let allslide = 0;
+        slider();
+
+        function slider() {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            allslide++;
+            if (allslide > slides.length) {
+                allslide = 1;
+            }
+            slides[allslide - 1].style.display = "block";
+            setTimeout(slider, 2000);
+        }
+    </script>
+
+</body>
+
+</html>

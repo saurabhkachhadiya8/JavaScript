@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORONA API</title>
+</head>
+
+<body>
+
+    <div id="images"></div>
+    <h1 id="name"></h1>
+    <button id="read" style="cursor: pointer;">Click Here</button>
+
+    <script>
+        let data = [
+            {
+                "id": 1,
+                "virus": "Corona virus",
+                "imdb_url": "https://images.pexels.com/photos/3993212/pexels-photo-3993212.jpeg?auto=compress&cs=tinysrgb&w=400"
+            },
+            {
+                "id": 2,
+                "virus": "Corona virus",
+                "imdb_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPBX9oEimJdYBE7kGbrXPWgP2aNyGqd2FZgQ&s"
+            },
+            {
+                "id": 3,
+                "virus": "Corona virus",
+                "imdb_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReHcs1OFNT-FlDLFL8Tj4AWv4tnihBbOkjSg&s"
+            }
+        ]
+
+        function generate() {
+            localStorage.setItem("object", JSON.stringify(data));
+            var object = localStorage.getItem('object');
+            var objectdata = JSON.parse(object);
+
+            let index = Math.floor(Math.random() * objectdata.length);
+            document.getElementById("images").innerHTML = `<img src="${objectdata[index].imdb_url}" alt="${objectdata[index].virus}">`;
+            document.getElementById("name").innerHTML = objectdata[index].virus;
+
+        }
+        window.onload = function () {
+            document.getElementById("read").addEventListener('click', generate);
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLACE API</title>
+</head>
+
+<body>
+
+    <div id="images"></div>
+    <h1 id="name"></h1>
+    <button id="read" style="cursor: pointer;">Click Here</button>
+
+    <script>
+        let data = [
+            {
+                "id": 1,
+                "place": "Taj Mahal",
+                "imdb_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeoOmmtW9zJoh_r47zauoIiLMp718MD2Tn_w&s"
+            },
+            {
+                "id": 2,
+                "place": "Kutubminar",
+                "imdb_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtfdUZyk5JLC_kcNoHFUg6uDX5OEd7OL_7Tg&s"
+            },
+            {
+                "id": 3,
+                "place": "Himalaya",
+                "imdb_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2nBLa72eKcFlXxlUIHr8LCdxCTREd3afaxw&s"
+            }
+        ]
+
+        function generate() {
+            localStorage.setItem("object", JSON.stringify(data));
+            var object = localStorage.getItem('object');
+            var objectdata = JSON.parse(object);
+
+            let index = Math.floor(Math.random() * objectdata.length);
+            document.getElementById("images").innerHTML = `<img src="${objectdata[index].imdb_url}" alt="${objectdata[index].place}">`;
+            document.getElementById("name").innerHTML = objectdata[index].place;
+
+        }
+        window.onload = function () {
+            document.getElementById("read").addEventListener('click', generate);
+        }
+    </script>
+
+</body>
+
+</html>

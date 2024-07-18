@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operation</title>
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+
+</head>
+
+<body onload=readall()>
+    <div class="container">
+        <div class="form">
+            <h1>CRUD Operation</h1>
+            <button class="add" onclick="create()"><i class="fa-solid fa-plus"></i> Add More User</button>
+            <form action="" class="create-form">
+                <input type="text" class="name" placeholder="Name">
+                <input type="email" class="email" placeholder="Email">
+                <input type="button" onclick="add()" value="Create">
+            </form>
+            <form action="" class="update-form">
+                <input type="text" class="id" hidden>
+                <input type="text" class="uname">
+                <input type="email" class="uemail">
+                <input type="button" onclick="update()" value="Update">
+            </form>
+            <table width="700" border="1" cellpadding="15">
+                <thead>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Action</th>
+
+                </thead>
+                <tbody class="data_table">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="assets/Js/crud.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pro_10</title>
+</head>
+
+<body>
+
+    <script>
+        var age = parseInt(prompt("Enter your age :"))
+
+        console.log("Age = " + age)
+
+        console.log("\n by TNRN :")
+        function tnrn() {
+            if (age >= 18 && age <= 70) {
+                console.log("you are eligible for voting.")
+            }
+            else if (age > 0 && age < 18) {
+                console.log("You aren't eligible for voting.")
+            }
+            else if (age > 70 && age <= 100) {
+                console.log("You aren't eligible for voting.")
+            }
+            else {
+                console.log("Enter valid age.")
+            }
+        }
+        console.log(tnrn())
+
+        console.log("\n by TSRN :")
+        function tsrn(Age) {
+            if (Age >= 18 && Age <= 70) {
+                console.log("you are eligible for voting.")
+            }
+            else if (Age > 0 && Age < 18) {
+                console.log("You aren't eligible for voting.")
+            }
+            else if (Age > 70 && Age <= 100) {
+                console.log("You aren't eligible for voting.")
+            }
+            else {
+                console.log("Enter valid age.")
+            }
+        }
+        console.log(tsrn(age))
+
+        console.log("\n by TNRS :")
+        function tnrs() {
+            if (age >= 18 && age <= 70) {
+                return "you are eligible for voting."
+            }
+            else if (age > 0 && age < 18) {
+                return "You aren't eligible for voting."
+            }
+            else if (age > 70 && age <= 100) {
+                return "You aren't eligible for voting."
+            }
+            else {
+                return "Enter valid age."
+            }
+        }
+        console.log(tnrs())
+
+        console.log("\n by TSRS :")
+        function tsrn(Age) {
+            if (age >= 18 && age <= 70) {
+                return "you are eligible for voting."
+            }
+            else if (age > 0 && age < 18) {
+                return "You aren't eligible for voting."
+            }
+            else if (age > 70 && age <= 100) {
+                return "You aren't eligible for voting."
+            }
+            else {
+                return "Enter valid age."
+            }
+        }
+        console.log(tsrn(age))
+    </script>
+
+</body>
+
+</html>

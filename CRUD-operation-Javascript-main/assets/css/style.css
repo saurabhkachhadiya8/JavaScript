@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0e0e0e;
+    color: #fff;
+}
+.form{
+    background-color: #1d2530;
+    padding: 40px 80px 80px;
+}
+.form h1{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.form .add,.form table .edit,.form table .delete{
+    padding: 8px 20px;
+    font-size: medium;
+    background-color: #178651;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.form .add i{
+    padding-right: 5px;
+}
+.form form input{
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    width:40%;
+}
+.form form input:last-child{
+    font-size: medium;
+    background-color: #178651;
+    color: #fff;
+    cursor: pointer;
+    width: 18%;
+}
+.form table,.form table th{
+    border: 1px solid #fff;
+    text-align: center;
+}
+.form table th{
+    padding: 5px;
+    font-size: large;
+}
+.edit{
+    margin: 20px 0!important;
+    background-color: #17a2b8!important;
+}
+.delete{
+    margin: 20px 0!important;
+    background-color: #dc3545!important;
+}
+.create-form,.update-form{
+    display: none;
+    margin-bottom: 30px;
+}

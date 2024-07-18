@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>program11.4</title>
+</head>
+
+<body>
+
+    <script>
+        var a = (parseInt(prompt("Enter your first number : ")));
+        var b = (parseInt(prompt("Enter your second number : ")));
+        var c = (parseInt(prompt("Enter your third number : ")));
+        var d = (parseInt(prompt("Enter your fourth number : ")));
+
+        console.log("first number(a) = " + a);
+        console.log("second number(b) = " + b);
+        console.log("third number(c) = " + c);
+        console.log("fourth number(d) = " + d);
+
+        if (a > b) {
+            if (a > c) {
+                if (a > d) {
+                    console.log("a is greater.");
+                }
+                else if (a == d) {
+                    console.log("a & d is same.");
+                }
+                else {
+                    console.log("d is greater.");
+                }
+            }
+            else if (a == c) {
+                console.log("a & c is same.");
+            }
+            else {
+                if (c > d) {
+                    console.log("c is greater.");
+                }
+                else if (c == d) {
+                    console.log("c & d is same.");
+                }
+                else {
+                    console.log("d is greater.");
+                }
+            }
+        }
+        else if (a == b) {
+            console.log("a & b is same.");
+        }
+        else {
+            if (b > c) {
+                if (b > d) {
+                    console.log("b is greater.");
+                }
+                else if (b == d) {
+                    console.log("b & d is same.");
+                }
+                else {
+                    console.log("d is greater.");
+                }
+            }
+            else if (b == c) {
+                console.log("b & c is same.");
+            }
+            else {
+                if (c > d) {
+                    console.log("c is greater.");
+                }
+                else if (c == d) {
+                    console.log("c & d is same.");
+                }
+                else {
+                    console.log("d is greater.");
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

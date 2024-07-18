@@ -1,0 +1,201 @@
+.text-warning {
+	color: #a8741a !important;
+}
+
+.text-color {
+	color: #afafaf;
+}
+
+.border-color {
+	border-color: #4a4a4a54 !important;
+}
+
+.border-warning {
+	border-color: #a8741a !important;
+}
+
+.bg-color {
+	background-color: #242424;
+}
+
+.btn-bg {
+	background-color: #2e2e2e;
+}
+.img-btn-bg{
+	background-color: #2e2e2e94;
+}
+.bg-warning {
+	background-color: #a8741a !important;
+}
+
+.prata-font {
+	font-family: 'Prata';
+}
+.col-20{
+	width: 20%;
+}
+
+body {
+	font-family: 'Rubik';
+	color: #fff;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+ul,
+ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+td,th{
+	border: 1px solid #4a4a4a54;
+	padding: 10px 0;
+}
+.hover-text:hover,
+.hover-text:hover i,
+.hover-text:hover a,
+.hover-text:hover span {
+	color: #a8741a !important;
+}
+.hover-bg:hover {
+	background-color: #a8741a !important;
+}
+
+.transition {
+	transition: all 0.5s !important;
+}
+button.active{
+	background-color: #a8741a!important;
+}
+.dropdown-item:hover{
+	background-color: transparent;
+	color: #a8741a!important;
+}
+.cart-box{
+	opacity: 0;
+	visibility: hidden;
+	z-index: 99;
+	width: 450px;
+	right: 0;
+	top: 100%;
+}
+.cart-hover:focus .cart-box{
+	opacity: 1;
+	visibility: visible;
+}
+.footer-hover:hover a,.footer-hover:hover{
+	transform: translateX(10px);
+}
+.text-decoration-hover:hover{
+	text-decoration: underline;
+}
+button.nav-link.active{
+	color: #a8741a!important;
+	border-color: #a8741a!important;
+}
+button.nav-link{
+	color: #fff!important;
+	background-color: #242424!important;
+	border-color: #4a4a4a54!important;
+	letter-spacing: 1px;
+}
+.featured-card:hover{
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.featured-card .featured-img img:nth-child(2){
+	display: none;
+}
+.featured-card:hover .featured-img img:nth-child(2){
+	display: block;
+}
+.featured-card:hover .featured-img img:first-child{
+	display: none;
+}
+.featured-card .featured-img button{
+	opacity: 0;
+	visibility: hidden;
+}
+.featured-card:hover .featured-img button{
+	opacity: 1;
+	visibility: visible;
+}
+.featured-card .hover-box{
+	opacity: 0;
+	visibility: hidden;
+	top: 30%;
+	left: 0;
+	transition: all 0.4s;
+}
+.featured-card:hover .hover-box{
+	opacity: 1;
+	visibility: visible;
+	top: 80%;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+}
+.tab-pane{
+	display: none!important;
+}
+.tab-pane.active{
+	display: flex!important;
+}
+.animation-hover:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+  .animation-hover:hover span {
+	animation: text-p 0.5s ease 130ms backwards;
+  }
+
+  .animation-hover:hover h2 {
+	animation: text-h2 0.7s ease 150ms backwards;
+  }
+
+  .animation-hover:hover p {
+	animation: text-p 0.8s ease 200ms backwards;
+  }
+
+  .animation-hover:hover a {
+	animation: text-p 0.9s ease 250ms backwards;
+  }
+
+  @keyframes text-h2 {
+	0% {
+	  transform: translateY(150%);
+	  opacity: 0;
+	}
+	1%{
+		opacity: 1;
+	}
+  }
+
+  @keyframes text-p {
+	0% {
+	  transform: translateY(120%);
+	  opacity: 0;
+	}
+	1%{
+		opacity: 1;
+	}
+  }
+
+  .form-control:focus {
+    color: #afafaf;
+    background-color: #242424;
+    border-color: #4a4a4a54;
+    outline: 0;
+    box-shadow: none;
+}
+.form-control::placeholder{
+	color: #afafaf;
+}

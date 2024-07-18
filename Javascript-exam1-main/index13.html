@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>program13</title>
+</head>
+
+<body>
+
+    <script>
+        var phy = parseInt(prompt("Enter physics marks :"));
+        var che = parseInt(prompt("Enter chemistry marks :"));
+        var bio = parseInt(prompt("Enter biology marks :"));
+        var mat = parseInt(prompt("Enter Mathematics marks :"));
+        var com = parseInt(prompt("Enter Computer marks :"));
+
+        console.log("physics = " + phy);
+        console.log("chemistry = " + che);
+        console.log("biology = " + bio);
+        console.log("Mathematics = " + mat);
+        console.log("Computer = " + com);
+
+        var per = (phy+che+bio+mat+com)/5;
+        console.log("Percentage = " + (per) + "%");
+
+        if(per >= 90){
+            console.log("Grade A");
+        }
+        else if(per >= 80){
+            console.log("Grade B");
+        }
+        else if(per >= 70){
+            console.log("Grade C");
+        }
+        else if(per >= 60){
+            console.log("Grade D");
+        }
+        else if(per >= 50){
+            console.log("Grade E");
+        }
+        else if(per >= 40){
+            console.log("Grade F");
+        }
+        else{
+            console.log("your are fail.");
+        }
+    </script>
+
+</body>
+
+</html>

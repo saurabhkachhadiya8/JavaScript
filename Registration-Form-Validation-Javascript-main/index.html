@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://wallpapers.com/images/hd/cyber-background-h5qjlsfpwly52fqm.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #0000003f;
+            background-blend-mode: darken;
+        }
+
+        h1 {
+            font-size: 40px;
+            letter-spacing: 2px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            width: 750px;
+            padding: 40px 30px;
+            color: #fff;
+            border: 2px solid #ffffff33;
+            border-radius: 10px;
+            backdrop-filter: blur(30px);
+        }
+
+        ul li {
+            width: 100%;
+            justify-content: space-between;
+            display: flex;
+        }
+
+        input {
+            background-color: rgba(255, 255, 255, 0.071);
+            color: #ffffff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 7px;
+            height: 50px;
+            padding: 10px;
+            margin: 13px 0;
+            transition: 0.5s;
+            outline: none;
+            font-size: 16px;
+            letter-spacing: 1px;
+            width: 48%;
+        }
+
+        input::placeholder {
+            color: #c5c5c5;
+            text-transform: capitalize;
+        }
+
+        input:focus {
+            border: 1px solid #ffffffaf;
+        }
+
+        input:hover {
+            border: 1px solid #fff;
+        }
+
+        .btn {
+            background-color: #fff;
+            color: #000;
+            font-weight: 600;
+            width: 100%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="post" onsubmit="return Form()" name="SubmitForm">
+        <ul>
+            <h1>Registration</h1>
+            <li>
+                <input type="text" placeholder="Full Name" name="Fname">
+                <input type="text" placeholder="Username" name="Uname">
+            </li>
+            <li>
+                <input type="email" placeholder="Email" name="Email">
+                <input type="number" placeholder="Phone Number" name="Phone">
+            </li>
+            <li>
+                <input type="password" placeholder="Password" id="password1" name="Pass1">
+                <input type="password" placeholder="Confirm Password" id="password2" name="Pass2">
+            </li>
+            <input type="submit" value="Register" class="btn">
+        </ul>
+    </form>
+
+    <script>
+        function Form() {
+            let fname = document.forms["SubmitForm"]["Fname"].value;
+            let uname = document.forms["SubmitForm"]["Uname"].value;
+            let email = document.forms["SubmitForm"]["Email"].value;
+            let phone = document.forms["SubmitForm"]["Phone"].value;
+            let pass1 = document.forms["SubmitForm"]["Pass1"].value;
+            let pass2 = document.forms["SubmitForm"]["Pass2"].value;
+
+            if (fname == "" || uname == "" || email == "" || phone == "" || pass1 == "" || pass2 == "") {
+                alert("Form must be filled out");
+                return false;
+            }
+
+            if (pass1.length < 8) {
+                alert("Password must be at least 8 characters long");
+                return false;
+            }
+            else if (!/[A-Z]/.test(pass1)) {
+                alert("Password must contain at least one uppercase letter");
+                return false;
+            }
+            else if (!/[a-z]/.test(pass1)) {
+                alert("Password must contain at least one lowercase letter");
+                return false;
+            }
+            else if (!/[0-9]/.test(pass1)) {
+                alert("Password must contain at least one digit");
+                return false;
+            }
+            else if (!/[!@#\$%\^\&*\)\(+=._-]/.test(pass1)) {
+                alert("Password must contain at least one symbol");
+                return false;
+            }
+            else if (pass1 != pass2) {
+                alert("Passwords do not match");
+                return false;
+            }
+            else {
+                alert("Registration successful");
+            }
+
+            return true;
+        }
+    </script>
+
+</body>
+
+</html>

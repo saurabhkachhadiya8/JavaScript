@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pro_4</title>
+</head>
+
+<body>
+
+    <script>
+        let a = (parseInt(prompt("Enter your first number :")));
+        let b = (parseInt(prompt("Enter your second number :")));
+        let c = (parseInt(prompt("Enter your third number :")));
+        let d = (parseInt(prompt("Enter your fourth number :")));
+
+        console.log("first number = " + a);
+        console.log("second number = " + b);
+        console.log("third number = " + c);
+        console.log("fourth number = " + d);
+
+        function greater(num_1, num_2, num_3, num_4) {
+            if (num_1 > num_2) {
+                if (num_1 > num_3) {
+                    if (num_1 > num_4) {
+                        console.log("first number is greater.")
+                    }
+                    else if (num_1 == num_4) {
+                        console.log("first & fourth number is same.")
+                    }
+                    else {
+                        console.log("fourth number is greater.")
+                    }
+                }
+                else if (num_1 == num_3) {
+                    console.log("first & third number is same.")
+                }
+                else {
+                    if (num_3 > num_4) {
+                        console.log("third number is greater.")
+                    }
+                    else if (num_3 == num_4) {
+                        console.log("third & fourth number is same.")
+                    }
+                    else {
+                        console.log("fourth number is greater.")
+                    }
+                }
+            }
+            else if (num_1 == num_2) {
+                console.log("first & second number is same.")
+            }
+            else {
+                if (num_2 > num_3) {
+                    if (num_2 > num_4) {
+                        console.log("second number is greater.")
+                    }
+                    else if (num_2 == num_4) {
+                        console.log("second & fourth number is same.")
+                    }
+                    else {
+                        console.log("fourth number is greater.")
+                    }
+                }
+                else if (num_2 == num_3) {
+                    console.log("second & third number is same.")
+                }
+                else {
+                    if (num_3 > num_4) {
+                        console.log("third number is greater.")
+                    }
+                    else if (num_3 == num_4) {
+                        console.log("third & fourth number is same.")
+                    }
+                    else {
+                        console.log("fourth number is greater.")
+                    }
+                }
+
+            }
+        }
+
+        console.log(greater(a, b, c, d))
+    </script>
+
+</body>
+
+</html>

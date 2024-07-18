@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>program16</title>
+</head>
+
+<body>
+
+    <script>
+        var a = parseInt(prompt("Enter first number :"));
+        var b = parseInt(prompt("Enter second number :"));
+        var c = parseInt(prompt("Enter third number :"));
+        var d = parseInt(prompt("Enter fourth number :"));
+
+        console.log("first number = " + a);
+        console.log("second number = " + b);
+        console.log("third number = " + c);
+        console.log("fourth number = " + d);
+
+        if (a > b) {
+            if (a > c) {
+                if (a > d) {
+                    console.log("a is max.");
+                }
+                else {
+                    console.log("d is max.");
+                }
+            }
+            else {
+                if (c > d) {
+                    console.log("c is max.");
+                }
+                else {
+                    console.log("d is max.");
+                }
+            }
+        }
+        else {
+            if (b > c) {
+                if (b > d) {
+                    console.log("b is max.");
+                }
+                else {
+                    console.log("d is max.");
+                }
+            }
+            else {
+                if (c > d) {
+                    console.log("c is max.");
+                }
+                else {
+                    console.log("d is max.");
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

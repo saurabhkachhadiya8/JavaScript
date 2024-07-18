@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD API</title>
+</head>
+
+<body>
+
+    <div id="images"></div>
+    <h1 id="name"></h1>
+    <button id="read" style="cursor: pointer;">Click Here</button>
+
+    <script>
+        let data = [
+            {
+                "id": 1,
+                "food": "Burger",
+                "imdb_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7tWKyw6zBuQzMffAxLeNgZco249Qn1VkN9w&s"
+            },
+            {
+                "id": 2,
+                "food": "Dosa",
+                "imdb_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFttosxY1r7WqS_eeUEE1MEEj_gvQ3bGkriQ&s"
+            },
+            {
+                "id": 3,
+                "food": "Pizza",
+                "imdb_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV4PJ3KZXVEdkkQexXCdueyAL5y1z2c2NhtQ&s"
+            }
+        ]
+
+        function generate() {
+            localStorage.setItem("object", JSON.stringify(data));
+            var object = localStorage.getItem('object');
+            var objectdata = JSON.parse(object);
+
+            let index = Math.floor(Math.random() * objectdata.length);
+            document.getElementById("images").innerHTML = `<img src="${objectdata[index].imdb_url}" alt="${objectdata[index].food}">`;
+            document.getElementById("name").innerHTML = objectdata[index].food;
+
+        }
+        window.onload = function () {
+            document.getElementById("read").addEventListener('click', generate);
+        }
+    </script>
+
+</body>
+
+</html>

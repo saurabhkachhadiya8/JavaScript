@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        .d-flex {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        body {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            height: 100vh;
+            background: linear-gradient(0deg, rgba(105, 105, 105, 1) 0%, rgba(179, 174, 174, 1) 25%, rgba(201, 197, 197, 1) 50%, rgba(231, 231, 231, 1) 75%, rgba(237, 237, 237, 1) 100%);
+        }
+
+        .main {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0px 7px 29px 0px #40404433;
+        }
+
+        p {
+            margin: 0 0 10px 0;
+            font-size: 60px;
+        }
+
+        #decrement,
+        #increment,
+        #reset {
+            border: none;
+            font-size: 16px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <h1 style="margin-top: 0;">Counter</h1>
+        <p id="count">0</p>
+        <div class="d-flex">
+            <button id="decrement" style="background-color: orangered;color: #fff;">-</button>
+            <button id="reset" style="background-color: #c9c9c9b2;margin: 0 10px;">reset</button>
+            <button id="increment" style="background-color: green;color: #fff;">+</button>
+        </div>
+    </div>
+
+    <script>
+        let counter = 0;
+
+        const increments = document.getElementById("increment");
+        const decrements = document.getElementById("decrement");
+        const counts = document.getElementById("count");
+        const resets = document.querySelector("#reset");
+
+        increments.addEventListener('click', () => {
+            counter++;
+            counts.innerHTML = counter;
+            color();
+        });
+        decrements.addEventListener('click', () => {
+            counter--;
+            counts.innerHTML = counter;
+            color();
+        });
+        resets.addEventListener('click', () => {
+            counter = 0;
+            counts.innerHTML = counter;
+            color();
+        });
+
+        function color() {
+            if (counts.innerHTML > 0) {
+                counts.style.color = 'green';
+            } else if (counts.innerHTML < 0) {
+                counts.style.color = 'orangered';
+            } else{
+                counts.style.color = '#000';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pro_7</title>
+</head>
+
+<body>
+
+    <script>
+        var a = parseInt(prompt("Enter your first number :"))
+        var b = parseInt(prompt("Enter your second number :"))
+        var c = parseInt(prompt("Enter your third number :"))
+
+        console.log("first number = " + a)
+        console.log("second number = " + b)
+        console.log("third number = " + c)
+
+        console.log("\n by TNRN :")
+        function tnrn() {
+            if (a > b) {
+                if (a > c) {
+                    console.log("first number is greater")
+                } else {
+                    console.log("third number is greater")
+                }
+            } else {
+                if (b > c) {
+                    console.log("second number is greater")
+                } else {
+                    console.log("third number is greater")
+                }
+            }
+        }
+        console.log(tnrn())
+
+        console.log("\n by TSRN :")
+        function tsrn(x, y, z) {
+            if (x > y) {
+                if (x > z) {
+                    console.log("first number is greater")
+                } else {
+                    console.log("third number is greater")
+                }
+            } else {
+                if (y > z) {
+                    console.log("second number is greater")
+                } else {
+                    console.log("third number is greater")
+                }
+            }
+        }
+        console.log(tsrn(a, b, c))
+
+        console.log("\n by TNRS :")
+        function tnrs() {
+            if (a > b) {
+                if (a > c) {
+                    return "first number is greater"
+                } else {
+                    return "third number is greater"
+                }
+            } else {
+                if (b > c) {
+                    return "second number is greater"
+                } else {
+                    return "third number is greater"
+                }
+            }
+        }
+        console.log(tnrs())
+
+        console.log("\n by TSRS :")
+        function tsrn(x, y, z) {
+            if (x > y) {
+                if (x > z) {
+                    return "first number is greater"
+                } else {
+                    return "third number is greater"
+                }
+            } else {
+                if (y > z) {
+                    return "second number is greater"
+                } else {
+                    return "third number is greater"
+                }
+            }
+        }
+        console.log(tsrn(a, b, c))
+    </script>
+
+</body>
+
+</html>

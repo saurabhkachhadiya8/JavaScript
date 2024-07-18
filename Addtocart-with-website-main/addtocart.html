@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- icons -->
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <!-- css  -->
+  <!-- boptstrap  -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- font  -->
+  <link rel="stylesheet" href="assets/css/font.css">
+  <!-- custom -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <!-- header start  -->
+  <header class="bg-color border-bottom border-color">
+    <div class="container">
+      <div class="row">
+        <div class="py-2 justify-content-center d-flex">
+          <p class="m-0" style="font-size: 14px;letter-spacing: 1px;">Free shipping on all domestic orders with coupon
+            code <span class="text-warning">“Watches2018”</span></p>
+        </div>
+        <div class="py-4 d-flex align-items-center border-top border-bottom border-color border-opacity-10">
+          <div class="col-5 d-flex">
+            <img src="assets/img/icon_phone.webp" alt="phone" width="45px">
+            <div class="ps-3 text-warning">
+              <p class="m-0">Call us</p>
+              <p class="m-0">Free Support: 84600 01889</p>
+            </div>
+          </div>
+          <div class="col-2 p-0">
+            <a href="#">
+              <img src="assets/img/logo.webp" width="100%" height="100%" alt="">
+            </a>
+          </div>
+          <div class="col-5 justify-content-end d-flex">
+            <ul class="list-unstyled d-flex">
+              <a href="#">
+                <li class="ms-2 py-2 px-3 border border-color rounded hover-text">
+                  <i class="fa-solid fa-magnifying-glass fa-rotate-90 transition" style="color: #ffffff;"></i>
+                </li>
+              </a>
+              <a href="#">
+                <li class="ms-3 py-2 px-3 border border-color rounded hover-text">
+                  <i class="fa-solid fa-heart transition" style="color: #ffffff;"></i>
+                </li>
+              </a>
+              <a href="addtocart.html" class=" ">
+                <li class="cart-hover ms-3 py-2 px-3 border border-color rounded hover-text position-relative">
+                  <i class="fa-solid fa-cart-shopping transition" style="color: #ffffff;"></i>
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse prata-font justify-content-center" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-light" style="letter-spacing: 1px;" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" style="letter-spacing: 1px;" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Shop
+                </a>
+                <ul class="dropdown-menu bg-color">
+                  <li class="p-2"><a class="dropdown-item text-light" href="#">Action</a></li>
+                  <li class="p-2"><a class="dropdown-item text-light" href="#">Another action</a></li>
+                  <li class="p-2"><a class="dropdown-item text-light" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" style="letter-spacing: 1px;" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Blog
+                </a>
+                <ul class="dropdown-menu bg-color">
+                  <li class="p-2"><a class="dropdown-item text-light" href="#">Action</a></li>
+                  <li class="p-2"><a class="dropdown-item text-light" href="#">Another action</a></li>
+                  <li class="p-2"><a class="dropdown-item text-light" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" style="letter-spacing: 1px;" href="#" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Pages
+                </a>
+                <ul class="dropdown-menu bg-color">
+                  <li class="p-2"><a class="dropdown-item text-light" href="#">Action</a></li>
+                  <li class="p-2"><a class="dropdown-item text-light" href="#">Another action</a></li>
+                  <li class="p-2"><a class="dropdown-item text-light" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" style="letter-spacing: 1px;" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" style="letter-spacing: 1px;" href="#">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- header end  -->
+  <!-- cart start  -->
+  <section class="bg-color" style="padding: 50px 0;">
+    <div class="container">
+      <div class="row">
+        <h1 class="prata-font text-center" style="margin-bottom: 60px;">Cart</h1>
+        <table class="btn-bg">
+          <thead>
+            <tr class="text-uppercase prata-font text-center" style="letter-spacing: 1px;">
+              <th class="fw-light">remove</th>
+              <th class="fw-light" width="300px">images</th>
+              <th class="fw-light">product</th>
+              <th class="fw-light">unit price</th>
+              <th class="fw-light">quantity</th>
+              <th class="fw-light">total</th>
+            </tr>
+          </thead>
+          <tbody id="add-products"></tbody>
+        </table>
+        <div id="totalamount" class="text-color text-end fs-1 prata-font border border-color py-2"></div>
+        <div></div>
+      </div>
+    </div>
+  </section>
+  <!-- cart end  -->
+  <!-- footer start  -->
+  <footer class="bg-color text-color py-5 border-top border-color">
+    <div class="container">
+      <div class="row">
+        <ul class="d-flex pb-5">
+          <li class="col-4" style="padding-right: 150px;">
+            <h4 class="prata-font mb-4 text-light">About</h4>
+            <p>Address: 123 Main Street, Anytown, CA 12345 - USA.</p>
+            <p>Phone: (012) 800 456 789</p>
+            <p>Fax: (012) 800 456 789</p>
+            <p class="mb-4">Email: Contact@plazathemes.com</p>
+            <a href="#"><i class="fa-brands fa-facebook-f text-color btn-bg rounded-circle me-1 hover-text transition"
+                style="width: 30px;height: 30px;line-height: 30px;text-align: center;font-size: small;"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter text-color btn-bg rounded-circle me-1 hover-text transition"
+                style="width: 30px;height: 30px;line-height: 30px;text-align: center;font-size: small;"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube text-color btn-bg rounded-circle me-1 hover-text transition"
+                style="width: 30px;height: 30px;line-height: 30px;text-align: center;font-size: small;"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram text-color btn-bg rounded-circle me-1 hover-text transition"
+                style="width: 30px;height: 30px;line-height: 30px;text-align: center;font-size: small;"></i></a>
+            <a href="#"><i
+                class="fa-brands fa-google-plus-g text-color btn-bg rounded-circle me-1 hover-text transition"
+                style="width: 30px;height: 30px;line-height: 30px;text-align: center;font-size: small;"></i></a>
+          </li>
+          <li class="col-8 d-flex">
+            <div class="col-3">
+              <h4 class="prata-font mb-4 text-light">Information</h4>
+              <p class="mb-2 hover-text footer-hover"><a href="#" class="text-color transition">About Us</a></p>
+              <p class="mb-2 hover-text footer-hover"><a href="#" class="text-color transition">Delivery Information</a>
+              </p>
+              <p class="mb-2 hover-text footer-hover"><a href="#" class="text-color transition">Privacy Policy</a></p>
+              <p class="mb-2 hover-text footer-hover"><a href="#" class="text-color transition">Terms & Conditions</a>
+              </p>
+              <p class="mb-2 hover-text footer-hover"><a href="#" class="text-color transition">Gift Certificates</a>
+              </p>
+              <p class="mb-2 hover-text footer-hover"><a href="#" class="text-color transition">Contact Us</a></p>
+            </div>
+            <div class="col-3">
+              <h4 class="prata-font mb-4 text-light">Extras</h4>
+              <p class="mb-2 hover-text footer-hover"><a href="#" class="text-color transition">Brands</a></p>
+              <p class="mb-2 hover-text footer-hover"><a href="#" class="text-color transition">Gift Certificates</a>
+              </p>
+              <p class="mb-2 hover-text footer-hover"><a href="#" class="text-color transition">Affiliate</a></p>
+              <p class="mb-2 hover-text footer-hover"><a href="#" class="text-color transition">Specials</a></p>
+              <p class="mb-2 hover-text footer-hover"><a href="#" class="text-color transition">My Account</a></p>
+              <p class="mb-2 hover-text footer-hover"><a href="#" class="text-color transition">Returns</a></p>
+            </div>
+            <div class="col-6">
+              <h4 class="prata-font mb-4 text-light">Custom Products</h4>
+              <ul class="d-flex align-items-center border-bottom border-color pb-3">
+                <li class="col-3 me-4"><img src="assets/img/11-450x450.webp" alt="footer-img"></li>
+                <li>
+                  <p class="mb-1 text-warning" style="font-size: 15px;"><i class="fa-solid fa-star"></i><i
+                      class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                      class="fa-solid fa-star"></i></p>
+                  <p class="mb-1 fs-4 prata-font"><a href="#" class="text-light">Acer Aspire E 15</a></p>
+                  <p class="mb-1 text-warning">$550.00 <del class="text-color">$700.00</del></p>
+                </li>
+              </ul>
+              <ul class="d-flex align-items-center pt-3">
+                <li class="col-3 me-4"><img src="assets/img/11-450x450.webp" alt="footer-img"></li>
+                <li>
+                  <p class="mb-1 text-warning" style="font-size: 15px;"><i class="fa-solid fa-star"></i><i
+                      class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                      class="fa-solid fa-star"></i></p>
+                  <p class="mb-1 fs-4 prata-font"><a href="#" class="text-light">Acer Aspire E 15</a></p>
+                  <p class="mb-1 text-warning">$550.00 <del class="text-color">$700.00</del></p>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul class="d-flex border-bottom border-top border-color py-3 px-5 justify-content-evenly">
+          <li><a href="#" class="text-color hover-text transition">Home</a></li>
+          <li><a href="#" class="text-color hover-text transition">Online Store</a></li>
+          <li><a href="#" class="text-color hover-text transition">Promotion</a></li>
+          <li><a href="#" class="text-color hover-text transition">Privacy Policy</a></li>
+          <li><a href="#" class="text-color hover-text transition">Terms Of Use</a></li>
+          <li><a href="#" class="text-color hover-text transition">Sitemap</a></li>
+          <li><a href="#" class="text-color hover-text transition">Support</a></li>
+          <li><a href="#" class="text-color hover-text transition">Contacts</a></li>
+        </ul>
+        <div class="pt-5 d-flex align-items-center" style="flex-direction: column;">
+          <p>© Mirora 2021 Made With <i class="fa-solid fa-heart"></i> BY <a href="#"
+              class="text-warning text-decoration-hover">HasThemes</a></p>
+          <img src="assets/img/payment.webp" alt="payment-img">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end  -->
+
+  <script>
+
+    const getCart = () => {
+      let data = JSON.parse(localStorage.getItem('cart'));
+      let tbl = "";
+
+      let totalamount = 0;
+
+      data.map((c) => {
+        totalamount += c.price * c.count;
+        return (
+          tbl +=
+          `
+          <tr class="text-center">
+              <td><i onclick="{delet(${c.id})}" class="fa-solid fa-xmark text-color fs-3" style="cursor:pointer;"></i></td>
+              <td class="text-center d-flex justify-content-evenly p-3"><img src="${c.img1}" width="45%"><img src="${c.img2}" width="45%"></td>
+              <td class="text-color prata-font"><h2>${c.name}</h2></td>
+              <td class="text-light">$${c.price}</td>
+              <td>
+                <div class="d-flex justify-content-evenly pb-2">
+                    <button id="decrement-${c.id}" class="bg-color text-light border-0"><i
+                        class="fa-solid fa-minus"></i></button>
+                    <p id="count-${c.id}" class="m-0">${c.count}</p>
+                    <button id="increment-${c.id}" class="bg-color text-light border-0"><i
+                        class="fa-solid fa-plus"></i></button>
+                  </div>  
+              </td>
+              <td class="text-light">$${c.price * c.count}</td>
+          </tr>
+          `
+        )
+      });
+      document.getElementById("add-products").innerHTML = tbl;
+      document.getElementById("totalamount").innerHTML = `Total Amount :- $${totalamount}`;
+
+      data.forEach(c => {
+
+        const increments = document.querySelector(`#increment-${c.id}`);
+        const decrements = document.querySelector(`#decrement-${c.id}`);
+        const counts = document.querySelector(`#count-${c.id}`);
+
+        increments.addEventListener('click', () => {
+          c.count++;
+          counts.innerHTML = c.count;
+          updateCart(c.id, c.count);
+          getCart();
+        });
+        decrements.addEventListener('click', () => {
+          if (c.count > 1) {
+            c.count--;
+          }
+          counts.innerHTML = c.count;
+          updateCart(c.id, c.count);
+          getCart();
+        });
+      });
+    }
+
+    function delet(id) {
+      let data = JSON.parse(localStorage.getItem('cart'));
+      let deleterec = data.filter((c) => c.id !== id);
+      localStorage.setItem('cart', JSON.stringify(deleterec));
+      getCart();
+    }
+
+
+
+    const updateCart = (id, count) => {
+      let data = JSON.parse(localStorage.getItem('cart'));
+      let item = data.find(c => c.id === id);
+      if (item) {
+        item.count = count;
+        localStorage.setItem('cart', JSON.stringify(data));
+      }
+    }
+
+    
+    getCart();
+
+  </script>
+
+</body>
+
+</html>

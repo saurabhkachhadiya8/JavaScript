@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>program17</title>
+</head>
+
+<body>
+
+    <script>
+        var a = parseInt(prompt("Enter first number :"));
+        var b = parseInt(prompt("Enter second number :"));
+
+        var choice = parseInt(prompt("press 1 for +. press 2 for -. press 3 for *. press 4 for /. enter your choice :"));
+
+        switch (choice) {
+
+            case 1:
+                console.log("addition = " + (a + b));
+                break;
+
+            case 2:
+                console.log("subtraction = " + (a - b));
+                break;
+
+            case 3:
+                console.log("multiplication = " + (a * b));
+                break;
+
+            case 4:
+                console.log("division = " + (a / b));
+                break;
+
+            default:
+                console.log("please enter valid choice");
+                break;
+        }
+    </script>
+
+</body>
+
+</html>

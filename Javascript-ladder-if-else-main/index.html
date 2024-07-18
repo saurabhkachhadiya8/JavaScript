@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>program 9.1</title>
+</head>
+
+<body>
+
+    <script>
+        var a = (parseInt(prompt("Enter any number for positive or nagative : ")));
+
+        console.log("a = " + a);
+
+        if (a > 0) {
+            console.log("THis is a positive number.");
+        }
+        else if (a == 0) {
+            console.log("THis is a positive number.");
+        }
+        else {
+            console.log("THis is a nagative number.");
+        }
+    </script>
+
+    <script>
+        var b = (parseInt(prompt("Enter any number for odd or even : ")));
+
+        console.log("b = " + b);
+
+        if (b % 2 == 0 && b != 0) {
+            console.log("THis is a even number.");
+        }
+        else if (b == 0) {
+            console.log("THis is a neutral number.");
+        }
+        else {
+            console.log("THis is a odd number.");
+        }
+    </script>
+
+    <script>
+        var c = (parseInt(prompt("Enter your first number : ")));
+        var d = (parseInt(prompt("Enter your second number : ")));
+
+        console.log("c = " + c);
+        console.log("d = " + d);
+
+        if (c > d) {
+            console.log("c is greater.");
+        }
+        else if (c == d) {
+            console.log("c & d is same.");
+        }
+        else {
+            console.log("d is greater.");
+        }
+    </script>
+
+    <script>
+        var age = (parseInt(prompt("Enter your age : ")));
+
+        console.log("age = " + age);
+
+        if (age < 12) {
+            console.log("pay a ticket price of 5.");
+        }
+        else if (age < 18) {
+            console.log("pay a ticket price of 10.");
+        }
+        else if (age < 60) {
+            console.log("pay a ticket price of 20.");
+        }
+        else {
+            console.log("pay a ticket price of 15.");
+        }
+    </script>
+
+    <script>
+        var year = (parseInt(prompt("Enter any year : ")));
+
+        console.log("year = " + year);
+
+        if (year % 4 == 0) {
+            console.log("THis is a leap year.");
+        }
+        else if (year % 4 != 0) {
+            console.log("THis is not a leap year.");
+        }
+    </script>
+
+    <script>
+        var price = (parseInt(prompt("Enter the purchase amount : ")));
+
+        console.log("Total amount = " + price);
+
+        if (price >= 100) {
+            console.log("You got 20 rupees discount.");
+        }
+        else if (price >= 50) {
+            console.log("You got 10 rupees discount.");
+        }
+        else {
+            console.log("You got nothing.");
+        }
+    </script>
+
+    <script>
+        var hour = (parseInt(prompt("Enter hour : ")));
+        var minute = (parseInt(prompt("Enter minute : ")));
+        var ampm = prompt("Enter am or pm : ");
+
+        console.log("Time = " + hour + ":" + minute + " " + ampm);
+
+        if (hour >= 5 && hour <= 11 && minute >= 0 && minute <= 59 && ampm == "am") {
+            console.log("Good morning.");
+        }
+        else if (hour >= 12 && hour <= 5 && minute >= 0 && minute <= 59 && ampm == "pm") {
+            console.log("Good afternoon.");
+        }
+        else if (hour >= 6 && hour <= 9 && minute >= 0 && minute <= 59 && ampm == "pm") {
+            console.log("Good evening.");
+        }
+    </script>
+
+    <script>
+        var weight = (parseInt(prompt("Enter weight : ")));
+        var height = (parseInt(prompt("Enter height : ")));
+
+        console.log("weight = " + weight);
+        console.log("height = " + height);
+        console.log("BMI = " + (weight / (height * height)));
+    </script>
+
+</body>
+
+</html>

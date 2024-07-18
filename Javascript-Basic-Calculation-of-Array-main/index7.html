@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pro_7</title>
+</head>
+
+<body>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+
+        var arr = [1, 2, 3, 4, 5];
+        var sum = 0;
+        arr.map(Number).forEach(function (element) {
+            sum += element;
+        });
+        document.getElementById("demo").innerHTML = "Array element : " + arr;
+        document.getElementById("demo1").innerHTML = "sum of all element : " + sum;
+
+    </script>
+
+</body>
+
+</html>
